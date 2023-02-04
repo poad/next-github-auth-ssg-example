@@ -1,0 +1,82 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+    - main
+
+  workflow_dispatch:
+
+env:
+  OIDC_IAM_ROLE_ARN: ${{ secrets.OIDC_IAM_ROLE_ARN }}
+  AWS_REGION: us-west-2
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    runs-on: ubuntu-latest
+    steps:
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        role-to-assume: ${{ env.OIDC_IAM_ROLE_ARN }}
+        role-session-name: GitHubActions
+        aws-region: ${{ env.AWS_REGION }}
+
+    - name: Use install pnpm
+      run: |
+        corepack enable && \
+        corepack prepare pnpm@7.26.3 --activate
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3.6.0
+      with:
+        node-version: ${{ matrix.node-version }}
+        check-latest: true
+        cache: pnpm
+        cache-dependency-path:  |
+          pnpm-lock.yaml
+          cdk/pnpm-lock.yaml
+
+    - name: Get pnpm store directory
+      id: pnpm-cache
+      shell: bash
+      run: |
+        echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+    - uses: actions/cache@v3
+      name: Setup pnpm cache
+      with:
+        path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+        key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-pnpm-store-
+
+    - name: Install global packages
+      run: |
+        pnpm add -g aws-cdk
+
+    - name: Install AWS CLI
+      run: |
+        curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+        unzip awscliv2.zip
+        sudo ./aws/install --update
+        rm -rf awscliv2.zip aws
+
+    - name: Build
+      run: pnpm all
+
+    - name: Build (cdk)
+      working-directory: cdk
+      run: |
+        pnpm install && pnpm lint && pnpm build
+
+    - name: deploy (cdk)
+      working-directory: cdk
+      run: cdk deploy -c env=dev

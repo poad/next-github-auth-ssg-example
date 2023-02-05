@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "build": "pnpm -r build",
-    "prebuild": "pnpm install"
+    "lint-fix": "pnpm -r lint-fix",
+    "prelint-fix": "pnpm -r install",
+    "prebuild": "pnpm -r install"
   },
   "keywords": [],
   "author": "",

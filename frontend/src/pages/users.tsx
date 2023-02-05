@@ -1,13 +1,38 @@
 import Head from 'next/head';
-import { Inter } from '@next/font/google';
 import GitHubSignInButton from '../component/GitHubSignInButton';
-import useGitHubOAuthAccess from '../hooks/useGitHubOAuthAccess';
 import styles from '../styles/Home.module.css';
+import { useCallback, useEffect, useState } from 'react';
+import qs from 'qs';
 
-const inter = Inter({ subsets: ['latin'] });
+const NEXT_PUBLIC_API_URL = process.env.NEXT_PUBLIC_API_URL as string;
 
 export default function Users() {
-  const databaseId = useGitHubOAuthAccess();
+  const [code, setCode] = useState<string>();
+  const [databaseId, setDatabaseId] = useState<number>();
+
+  const fetcher = useCallback(async (code: string) => {
+    return await fetch(NEXT_PUBLIC_API_URL, {
+      method: 'POST',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: `code=${encodeURIComponent(code)}`,
+    });
+  }, []);
+
+  useEffect(() => {
+    if (code && !databaseId) {
+      fetcher(code).then((response) =>
+        response.json().then((json) => setDatabaseId(json.databaseId)),
+      );
+    }
+  }, [code]);
+
+  useEffect(() => {
+    setCode(qs.parse(window.location.search).code?.toString());
+  }, []);
+
   return (
     <>
       <Head>
@@ -18,7 +43,13 @@ export default function Users() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          {databaseId ? <GitHubSignInButton /> : databaseId}
+          {!(code || databaseId) ? (
+            <GitHubSignInButton />
+          ) : !databaseId ? (
+            'loading...'
+          ) : (
+            databaseId
+          )}
         </div>
       </main>
     </>

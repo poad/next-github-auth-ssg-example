@@ -38,6 +38,7 @@ export class BackendStack extends cdk.Stack {
       runtime: lambda.Runtime.NODEJS_18_X,
       architecture: lambda.Architecture.ARM_64,
       entry: './lambda/index.ts',
+      retryAttempts: 0,
       environment: {
         LOG_LEVEL: 'info',
         NODE_OPTIONS: '–enable-source-maps',
@@ -91,6 +92,31 @@ export class BackendStack extends cdk.Stack {
     api.deploymentStage.urlForPath('/');
 
     api.root.addMethod('POST', new apigateway.LambdaIntegration(fn));
+
+    new apigateway.GatewayResponse(this, 'UnauthorizedGatewayResponse', {
+      restApi: api,
+      type: apigateway.ResponseType.UNAUTHORIZED,
+      statusCode: '401',
+      responseHeaders: {
+        'Access-Control-Allow-Origin': "'*'",
+      },
+    });
+
+    new apigateway.GatewayResponse(this, 'ClientErrorGatewayResponse', {
+      restApi: api,
+      type: apigateway.ResponseType.DEFAULT_4XX,
+      responseHeaders: {
+        'Access-Control-Allow-Origin': "'*'",
+      },
+    });
+
+    new apigateway.GatewayResponse(this, 'ServerErrorGatewayResponse', {
+      restApi: api,
+      type: apigateway.ResponseType.DEFAULT_5XX,
+      responseHeaders: {
+        'Access-Control-Allow-Origin': "'*'",
+      },
+    });
 
     new ssm.StringParameter(this, 'ApiEndpointParameter', {
       parameterName,

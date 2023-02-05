@@ -93,7 +93,7 @@ jobs:
       working-directory: frontend/cdk
       run: |
         cdk deploy \
-          -c appkName=next-github-auth-ssg-example
+          -c appkName=next-github-auth-ssg-example \
           -c clientId=${{ secrets.NEXT_PUBLIC_GITHUB_CLIENT_ID }} \
           -c apiUrl=${{ steps.get-param.outputs.value }}
 

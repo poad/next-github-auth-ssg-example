@@ -15,7 +15,7 @@ jobs:
   test:
     strategy:
       matrix:
-        node-version: [16.x, 18.x]
+        node-version: [18.x]
 
     runs-on: ubuntu-latest
     steps:
@@ -34,7 +34,9 @@ jobs:
         cache: pnpm
         cache-dependency-path:  |
           pnpm-lock.yaml
-          cdk/pnpm-lock.yaml
+          backend/pnpm-lock.yaml
+          frontend/pnpm-lock.yaml
+          frontend/cdk/pnpm-lock.yaml
 
     - name: Get pnpm store directory
       id: pnpm-cache
@@ -50,25 +52,6 @@ jobs:
           ${{ runner.os }}-pnpm-store-
 
     - name: Build
-      run: pnpm all
-
-    - name: Build (cdk)
-      working-directory: cdk
-      run: |
-        pnpm install && pnpm lint && pnpm build
-
-  configure:
-    runs-on: ubuntu-latest
-
-    if: github.actor != 'dependabot[bot]'
-
-    steps:
-    - name: Pull request auto merge enabler
-      if: github.event_name == 'pull_request'
-      uses: poad/github-pull-request-auto-merge-enable-action@v1.0.2
-      with:
-        pull_request_id: ${{ github.event.pull_request.node_id }}
-        github_token: ${{ secrets.PERSONAL_TOKEN_FOR_GITHUB_ACTIONS }}
-        repository: ${{ github.event.repository.name }}
-        owner: ${{ github.repository_owner }}
-        merge_method: SQUASH
+      env:
+        CI: true
+      run: pnpm build

@@ -8,11 +8,7 @@ import * as crypto from 'crypto';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export interface NextCloudFrontTemplateStackConfig {}
-
-interface NextCloudFrontTemplateStackProps
-  extends NextCloudFrontTemplateStackConfig,
-    cdk.StackProps {
+interface NextCloudFrontTemplateStackProps extends cdk.StackProps {
   appName: string;
 }
 

@@ -10,6 +10,7 @@ on:
 env:
   OIDC_IAM_ROLE_ARN: ${{ secrets.OIDC_IAM_ROLE_ARN }}
   AWS_REGION: us-west-2
+  API_ENDPOINT_URL_PARAM: /next-github-auth-ssg-example/API_ENDPOINT
 
 permissions:
   id-token: write
@@ -46,7 +47,9 @@ jobs:
         cache: pnpm
         cache-dependency-path: |
           pnpm-lock.yaml
-          cdk/pnpm-lock.yaml
+          backend/pnpm-lock.yaml
+          frontend/pnpm-lock.yaml
+          frontend/cdk/pnpm-lock.yaml
 
     - name: Get pnpm store directory
       id: pnpm-cache
@@ -71,16 +74,26 @@ jobs:
       run: |
         pnpm add -g aws-cdk
 
-    - name: Install AWS CLI
-      run: |
-        curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-        unzip awscliv2.zip
-        sudo ./aws/install --update
-        rm -rf awscliv2.zip aws
-
-    - name: Build
-      run: pnpm all
-
     - name: deploy (cdk)
-      working-directory: cdk
-      run: cdk deploy -c env=dev
+      working-directory: backend
+      run: |
+        cdk deploy \
+          -c clientId=${{ secrets.NEXT_PUBLIC_GITHUB_CLIENT_ID }} \
+          -c clientSecret=${{ secrets.NEXT_PUBLIC_GITHUB_CLIENT_SECRET }} \
+          -c parameterName=${{ env.API_ENDPOINT_URL_PARAM }}
+
+    - name: Get Parameters
+      uses: poad/get-aws-ssm-parameter@v1.0.0
+      id: get-param
+      with:
+        parameter-name: ${{ env.API_ENDPOINT_URL_PARAM }}
+        aws-region: us-west-2
+
+    - name: deploy (frontend)
+      working-directory: frontend/cdk
+      run: |
+        cdk deploy \
+          -c appkName=next-github-auth-ssg-example
+          -c clientId=${{ secrets.NEXT_PUBLIC_GITHUB_CLIENT_ID }} \
+          -c apiUrl=${{ steps.get-param.outputs.value }}
+

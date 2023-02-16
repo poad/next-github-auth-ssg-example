@@ -70,7 +70,7 @@ export const handler = async (
   if (event.body) {
     const code = qs.parse(event.body).code?.toString();
     if (code) {
-      const tokenResp = (await accessToken(code));
+      const tokenResp = await accessToken(code);
       console.log(JSON.stringify(tokenResp));
       const token = tokenResp.access_token;
       if (!token) {

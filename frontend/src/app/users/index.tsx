@@ -1,6 +1,7 @@
+'use client';
 import Head from 'next/head';
-import GitHubSignInButton from '../component/GitHubSignInButton';
-import styles from '../styles/Home.module.css';
+import GitHubSignInButton from '../../component/GitHubSignInButton';
+import styles from './styles/Home.module.css';
 import { useCallback, useEffect, useState } from 'react';
 import qs from 'qs';
 

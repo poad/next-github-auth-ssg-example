@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
+    "export": "next build",
     "start": "next start",
     "format-check": "rome format src",
     "format": "rome format --write src",
@@ -20,10 +20,9 @@
     "prebuild": "pnpm lint",
     "preexport": "pnpm build",
     "predev": "pnpm install",
-    "all": "pnpm build && pnpm export"
+    "all": "pnpm build"
   },
   "dependencies": {
-    "@next/font": "^13",
     "@types/node": "*",
     "@types/react": "*",
     "@types/uuid": "*",
@@ -31,7 +30,6 @@
     "qs": "*",
     "react": "*",
     "react-dom": "*",
-    "react-no-ssr": "*",
     "typescript": "*",
     "web-vitals": "*"
   },
@@ -40,13 +38,9 @@
     "@swc/core": "*",
     "@swc/helpers": "*",
     "@types/qs": "*",
-    "@types/react-no-ssr": "*",
     "regenerator-runtime": "*",
     "rimraf": "*",
     "rome": "*",
     "uuid": "*"
-  },
-  "resolutions": {
-    "json5": ">=2.2.3"
   }
 }

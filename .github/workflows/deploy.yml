@@ -37,7 +37,7 @@ jobs:
       shell: bash
       run: |
         corepack enable && \
-        corepack prepare pnpm@7.26.3 --activate
+        corepack prepare pnpm@8.4.0 --activate
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3.6.0
@@ -73,6 +73,11 @@ jobs:
     - name: Install global packages
       run: |
         pnpm add -g aws-cdk
+
+    - name: install
+      env:
+        CI: true
+      run: pnpm -r install --no-frozen-lockfile
 
     - name: deploy (cdk)
       working-directory: backend

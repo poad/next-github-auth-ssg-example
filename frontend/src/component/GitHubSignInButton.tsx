@@ -1,4 +1,5 @@
-import { Inter } from '@next/font/google';
+'use client';
+import { Inter } from 'next/font/google';
 import * as crypto from 'crypto';
 import { v4 as uuidv4 } from 'uuid';
 

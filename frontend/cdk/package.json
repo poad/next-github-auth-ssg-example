@@ -11,7 +11,7 @@
     "format-check": "rome format bin lib",
     "format": "rome format --write bin lib",
     "check": "rome check bin lib",
-    "check-fix": "rome check --apply-suggested bin lib",
+    "check-fix": "rome check --apply-unsafe bin lib",
     "lint": "pnpm format-check && pnpm check",
     "lint-fix": "pnpm format && pnpm check-fix",
     "clean": "rimraf build",

@@ -11,7 +11,7 @@
     "format-check": "rome format bin lib lambda",
     "format": "rome format --write bin lib lambda",
     "check": "rome check bin lib lambda",
-    "check-fix": "rome check --apply-suggested bin lib lambda",
+    "check-fix": "rome check --apply-unsafe bin lib lambda",
     "lint": "pnpm format-check && pnpm check",
     "lint-fix": "pnpm format && pnpm check-fix",
     "clean": "rimraf build",

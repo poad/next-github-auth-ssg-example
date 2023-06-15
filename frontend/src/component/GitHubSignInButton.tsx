@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 const NEXT_PUBLIC_GITHUB_CLIENT_ID = process.env
   .NEXT_PUBLIC_GITHUB_CLIENT_ID as string;
 
-const signIn = () => {
+function signIn() {
   const uuid = uuidv4();
   const state = crypto.createHash('sha512').update(uuid).digest('hex');
 
@@ -22,11 +22,11 @@ const signIn = () => {
     .map(([key, value]) => `${key}=${encodeURIComponent(value)}`)
     .join('&');
   window.location.href = `https://github.com/login/oauth/authorize?${queryString}`;
-};
+}
 
 export const GitHubSignInButton = () => {
   return (
-    <button onClick={() => signIn()} className={inter.className}>
+    <button type='button' onClick={signIn} className={inter.className}>
       Sign in by GitHub
     </button>
   );

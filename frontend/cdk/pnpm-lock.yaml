@@ -49,8 +49,8 @@ devDependencies:
 
 packages:
 
-  /@aws-cdk/asset-awscli-v1@2.2.191:
-    resolution: {integrity: sha512-mV37Y8Lwi0unz+vNxX8CA8spfFGRHmsn0cO+d1NdqDLIvplxM6wwO/IQSzoMTFPOWKHd8kbzW0UUwRlK5fRwYw==}
+  /@aws-cdk/asset-awscli-v1@2.2.192:
+    resolution: {integrity: sha512-kabo2WJR1lMh8ER2MYUdiN0inYIO8+K/ken6obNcdxIKf9d1llP8wlfU3JwNMv5IkNqoVWLPToZ8D2dCL2VAPQ==}
     dev: false
 
   /@aws-cdk/asset-kubectl-v20@2.1.2:
@@ -591,7 +591,7 @@ packages:
     peerDependencies:
       constructs: ^10.0.0
     dependencies:
-      '@aws-cdk/asset-awscli-v1': 2.2.191
+      '@aws-cdk/asset-awscli-v1': 2.2.192
       '@aws-cdk/asset-kubectl-v20': 2.1.2
       '@aws-cdk/asset-node-proxy-agent-v5': 2.0.165
       constructs: 10.2.52

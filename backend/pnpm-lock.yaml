@@ -6,23 +6,23 @@ settings:
 
 dependencies:
   aws-cdk-lib:
-    specifier: ^2.84.0
-    version: 2.84.0(constructs@10.2.55)
+    specifier: ^2.85.0
+    version: 2.85.0(constructs@10.2.56)
   aws-lambda:
     specifier: ^1.0.7
     version: 1.0.7
   constructs:
-    specifier: ^10.2.55
-    version: 10.2.55
+    specifier: ^10.2.56
+    version: 10.2.56
   cross-fetch:
     specifier: ^3.1.6
     version: 3.1.6
   graphql:
-    specifier: ^16.6.0
-    version: 16.6.0
+    specifier: ^16.7.0
+    version: 16.7.0
   graphql-request:
     specifier: ^6.1.0
-    version: 6.1.0(graphql@16.6.0)
+    version: 6.1.0(graphql@16.7.0)
   qs:
     specifier: ^6.11.2
     version: 6.11.2
@@ -50,8 +50,8 @@ devDependencies:
     specifier: ^6.9.7
     version: 6.9.7
   aws-cdk:
-    specifier: ^2.84.0
-    version: 2.84.0
+    specifier: ^2.85.0
+    version: 2.85.0
   esbuild:
     specifier: ^0.18.6
     version: 0.18.6
@@ -287,12 +287,12 @@ packages:
     dev: true
     optional: true
 
-  /@graphql-typed-document-node/core@3.2.0(graphql@16.6.0):
+  /@graphql-typed-document-node/core@3.2.0(graphql@16.7.0):
     resolution: {integrity: sha512-mB9oAsNCm9aM3/SOv4YtBMqZbYj10R7dkq8byBqxGY/ncFwhf2oQzMV+LCRlWoDSEBJ3COiR1yeDvMtsoOsuFQ==}
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
-      graphql: 16.6.0
+      graphql: 16.7.0
     dev: false
 
   /@jridgewell/resolve-uri@3.1.1:
@@ -633,8 +633,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
-  /aws-cdk-lib@2.84.0(constructs@10.2.55):
-    resolution: {integrity: sha512-4zLtCLCIs5Ia4WRGqiXRwxSkpGaNy3NxMexO9qYHSuIYpqf4sHObzZ0tDHZCFL5Wkui3sCu3OLQWrRHrr93HvA==}
+  /aws-cdk-lib@2.85.0(constructs@10.2.56):
+    resolution: {integrity: sha512-u+ypK8XEMRH3tGRMSmcbPYxLet7xBdGIztUkMcPtlNJGhS/vxqh12yYkem3g3zzmHwdX8OPLSnlZ2sIuiIqp/g==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -642,7 +642,7 @@ packages:
       '@aws-cdk/asset-awscli-v1': 2.2.198
       '@aws-cdk/asset-kubectl-v20': 2.1.2
       '@aws-cdk/asset-node-proxy-agent-v5': 2.0.165
-      constructs: 10.2.55
+      constructs: 10.2.56
     dev: false
     bundledDependencies:
       - '@balena/dockerignore'
@@ -656,8 +656,8 @@ packages:
       - table
       - yaml
 
-  /aws-cdk@2.84.0:
-    resolution: {integrity: sha512-XypGsMW+H6DLLIPt4zG5KWv1FuUlpS6jqEROxg5maJFFsRaQnMkfgXP/ZT1IELyIWCYAZl6xD1rz7WRS3yMueA==}
+  /aws-cdk@2.85.0:
+    resolution: {integrity: sha512-duRE5rvP9Qu5iUNgA6+knHKsQ7xI6yKMUxyARTveYEzW/qDHD0RWKRu+pDbbwXLlzcr25oKGPjC3dM0ui2beKg==}
     engines: {node: '>= 14.15.0'}
     hasBin: true
     optionalDependencies:
@@ -668,14 +668,14 @@ packages:
     resolution: {integrity: sha512-9GNFMRrEMG5y3Jvv+V4azWvc+qNWdWLTjDdhf/zgMlz8haaaLWv0xeAIWxz9PuWUBawsVxy0zZotjCdR3Xq+2w==}
     hasBin: true
     dependencies:
-      aws-sdk: 2.1401.0
+      aws-sdk: 2.1402.0
       commander: 3.0.2
       js-yaml: 3.14.1
       watchpack: 2.4.0
     dev: false
 
-  /aws-sdk@2.1401.0:
-    resolution: {integrity: sha512-qzuMxIvCmH1Df194sYn+L5yDrChIKzZG/fBLElPVSN1fB18qhPSYUfr9uVCMeTpDCmdTW1Ojk7cAkByzzAnKjA==}
+  /aws-sdk@2.1402.0:
+    resolution: {integrity: sha512-ndyx3H+crHPIXJF+SO1dqzzBmQwMdoB9uCND/Ip4Ozfv5jse7X58LWpWucM9KBctQ8o37c8KvXjfTr14lE3ykA==}
     engines: {node: '>= 10.0.0'}
     dependencies:
       buffer: 4.9.2
@@ -778,8 +778,8 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /constructs@10.2.55:
-    resolution: {integrity: sha512-TjH8BRN9qpmjZqq0ixH1NqgPHam0tQJcMQ6puffM0Sj0dRPXaJAzOtbHpn24rhjE+90vIQ8jBAUO8v8Sdp1uAQ==}
+  /constructs@10.2.56:
+    resolution: {integrity: sha512-fUnw15SNkYxF+8lv9IaCPa0xWK04utS+3cILvr/MHn+tXwljkjGtiKPRTcL17G/9P/xfo59smJ1MC0d7EcOrkg==}
     engines: {node: '>= 16.14.0'}
     dev: false
 
@@ -1074,20 +1074,20 @@ packages:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
     dev: false
 
-  /graphql-request@6.1.0(graphql@16.6.0):
+  /graphql-request@6.1.0(graphql@16.7.0):
     resolution: {integrity: sha512-p+XPfS4q7aIpKVcgmnZKhMNqhltk20hfXtkaIkTfjjmiKMJ5xrt5c743cL03y/K7y1rg3WrIC49xGiEQ4mxdNw==}
     peerDependencies:
       graphql: 14 - 16
     dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@16.6.0)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.7.0)
       cross-fetch: 3.1.6
-      graphql: 16.6.0
+      graphql: 16.7.0
     transitivePeerDependencies:
       - encoding
     dev: false
 
-  /graphql@16.6.0:
-    resolution: {integrity: sha512-KPIBPDlW7NxrbT/eh4qPXz5FiFdL5UbaA0XUNz2Rp3Z3hqBSkbj0GVjwFDztsWVauZUWsbKHgMg++sk8UX0bkw==}
+  /graphql@16.7.0:
+    resolution: {integrity: sha512-kdNG+ZGNf0E4dezSA2N9cRq8UdOMCcz9Wzh1dDSrCzGCz0nj6p8qlE+utY6iqr9y1sh3MZxUb7K794neZ2oT1w==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
     dev: false
 

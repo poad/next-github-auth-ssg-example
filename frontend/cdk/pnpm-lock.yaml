@@ -7,10 +7,10 @@ settings:
 dependencies:
   aws-cdk-lib:
     specifier: ^2.85.0
-    version: 2.85.0(constructs@10.2.56)
+    version: 2.85.0(constructs@10.2.57)
   constructs:
-    specifier: ^10.2.56
-    version: 10.2.56
+    specifier: ^10.2.57
+    version: 10.2.57
   esbuild:
     specifier: ^0.18.6
     version: 0.18.6
@@ -385,7 +385,7 @@ packages:
       '@swc/core': 1.3.66(@swc/helpers@0.5.1)
       commander: 7.2.0
       fast-glob: 3.2.12
-      semver: 7.5.2
+      semver: 7.5.3
       slash: 3.0.0
       source-map: 0.7.4
     dev: true
@@ -585,7 +585,7 @@ packages:
     resolution: {integrity: sha512-58S9QDqG0Xx27YwPSt9fJxivjYl432YCwfDMfZ+71RAqUrZef7LrKQZ3LHLOwCS4FLNBplP533Zx895SeOCHvA==}
     dev: true
 
-  /aws-cdk-lib@2.85.0(constructs@10.2.56):
+  /aws-cdk-lib@2.85.0(constructs@10.2.57):
     resolution: {integrity: sha512-u+ypK8XEMRH3tGRMSmcbPYxLet7xBdGIztUkMcPtlNJGhS/vxqh12yYkem3g3zzmHwdX8OPLSnlZ2sIuiIqp/g==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
@@ -594,7 +594,7 @@ packages:
       '@aws-cdk/asset-awscli-v1': 2.2.198
       '@aws-cdk/asset-kubectl-v20': 2.1.2
       '@aws-cdk/asset-node-proxy-agent-v5': 2.0.165
-      constructs: 10.2.56
+      constructs: 10.2.57
     dev: false
     bundledDependencies:
       - '@balena/dockerignore'
@@ -629,7 +629,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       bin-version: 6.0.0
-      semver: 7.5.2
+      semver: 7.5.3
       semver-truncate: 2.0.0
     dev: true
 
@@ -681,8 +681,8 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /constructs@10.2.56:
-    resolution: {integrity: sha512-fUnw15SNkYxF+8lv9IaCPa0xWK04utS+3cILvr/MHn+tXwljkjGtiKPRTcL17G/9P/xfo59smJ1MC0d7EcOrkg==}
+  /constructs@10.2.57:
+    resolution: {integrity: sha512-4PP/2zMTI7JxNegz05l6Wk0maYOBS/hDTQUFGL/iL73hO0ztyyeefgB+zajHPE3RPqgexSQVddIGWPQ2cmMkvQ==}
     engines: {node: '>= 16.14.0'}
     dev: false
 
@@ -1226,8 +1226,8 @@ packages:
     hasBin: true
     dev: true
 
-  /semver@7.5.2:
-    resolution: {integrity: sha512-SoftuTROv/cRjCze/scjGyiDtcUyxw1rgYQSZY7XTmtR5hX+dm76iDbTH8TkLPHCQmlbQVSSbNZCPM2hb0knnQ==}
+  /semver@7.5.3:
+    resolution: {integrity: sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:

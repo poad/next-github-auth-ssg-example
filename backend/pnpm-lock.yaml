@@ -15,8 +15,8 @@ dependencies:
     specifier: ^10.2.64
     version: 10.2.64
   cross-fetch:
-    specifier: ^3.1.6
-    version: 3.1.6
+    specifier: ^3.1.8
+    version: 3.1.8
   graphql:
     specifier: ^16.7.1
     version: 16.7.1
@@ -865,8 +865,8 @@ packages:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
     dev: true
 
-  /cross-fetch@3.1.6:
-    resolution: {integrity: sha512-riRvo06crlE8HiqOwIpQhxwdOk4fOeR7FVM/wXoxchFEqMNUjvbs3bfo4OTgMEMHzppd4DxFBDbyySj8Cv781g==}
+  /cross-fetch@3.1.8:
+    resolution: {integrity: sha512-cvA+JwZoU0Xq+h6WkMvAUqPEYy92Obet6UdKLfW60qn99ftItKjB5T+BkyWOFWe2pUyfQ+IJHmpOTznqk1M6Kg==}
     dependencies:
       node-fetch: 2.6.12
     transitivePeerDependencies:
@@ -1168,7 +1168,7 @@ packages:
       graphql: 14 - 16
     dependencies:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.7.1)
-      cross-fetch: 3.1.6
+      cross-fetch: 3.1.8
       graphql: 16.7.1
     transitivePeerDependencies:
       - encoding

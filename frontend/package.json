@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@types/node": "^20.4.2",
-    "@types/react": "^18.2.14",
+    "@types/react": "^18.2.15",
     "@types/uuid": "^9.0.2",
     "next": "^13.4.9",
     "qs": "^6.11.2",

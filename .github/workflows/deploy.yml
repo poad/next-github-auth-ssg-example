@@ -37,10 +37,11 @@ jobs:
       name: Install pnpm
       id: pnpm-install
       with:
-        version: 8.6.5
+        version: 8.6.10
         run_install: |
           - recursive: true
             args: [--no-frozen-lockfile]
+          - args: [--global, aws-cdk]
 
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3.7.0
@@ -48,20 +49,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         check-latest: true
         cache: pnpm
-
-    - name: Setup global dir for pnpm
-      shell: bash
-      run: |
-        echo "PNPM_HOME=/usr/local/bin" >> $GITHUB_ENV
-
-    - name: Install global packages
-      run: |
-        pnpm add -g aws-cdk
-
-    - name: install
-      env:
-        CI: true
-      run: pnpm -r install --no-frozen-lockfile
 
     - name: deploy (cdk)
       working-directory: backend

@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   aws-cdk-lib:
-    specifier: ^2.94.0
-    version: 2.94.0(constructs@10.2.70)
+    specifier: ^2.95.0
+    version: 2.95.0(constructs@10.2.70)
   aws-lambda:
     specifier: ^1.0.7
     version: 1.0.7
@@ -29,8 +29,8 @@ dependencies:
 
 devDependencies:
   '@biomejs/biome':
-    specifier: ^1.1.0
-    version: 1.1.0
+    specifier: ^1.1.2
+    version: 1.1.2
   '@types/aws-lambda':
     specifier: ^8.10.119
     version: 8.10.119
@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^6.9.8
     version: 6.9.8
   aws-cdk:
-    specifier: ^2.94.0
-    version: 2.94.0
+    specifier: ^2.95.0
+    version: 2.95.0
   esbuild:
     specifier: ^0.19.2
     version: 0.19.2
@@ -71,22 +71,22 @@ packages:
     resolution: {integrity: sha512-wMue2Sy4GAVTk6Ic4tJVcnfdau+gx2EnG7S+uAEe+TWJFqE4YoWN4/H8MSLj4eYJKxGg26lZwboEniNiNwZQ6Q==}
     dev: false
 
-  /@biomejs/biome@1.1.0:
-    resolution: {integrity: sha512-0cDWzMdKhGq/xhmnEVRUHYp7OPGJdKP/Ykps+z20AeUNbwvxY6sKCtXYxnO2KRD34+3akSzhrzvknM4YsyiFlw==}
+  /@biomejs/biome@1.1.2:
+    resolution: {integrity: sha512-JEVWchqo0Xhl86IJgOh0xESWnNRUXBUDByCBR8TA4lIPzm/6U6Tv77+MblNkZ8MvwCtP6PlBNGdQcGKKabtuHA==}
     engines: {node: '>=14.*'}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      '@biomejs/cli-darwin-arm64': 1.1.0
-      '@biomejs/cli-darwin-x64': 1.1.0
-      '@biomejs/cli-linux-arm64': 1.1.0
-      '@biomejs/cli-linux-x64': 1.1.0
-      '@biomejs/cli-win32-arm64': 1.1.0
-      '@biomejs/cli-win32-x64': 1.1.0
+      '@biomejs/cli-darwin-arm64': 1.1.2
+      '@biomejs/cli-darwin-x64': 1.1.2
+      '@biomejs/cli-linux-arm64': 1.1.2
+      '@biomejs/cli-linux-x64': 1.1.2
+      '@biomejs/cli-win32-arm64': 1.1.2
+      '@biomejs/cli-win32-x64': 1.1.2
     dev: true
 
-  /@biomejs/cli-darwin-arm64@1.1.0:
-    resolution: {integrity: sha512-2NbviMV7029//HW3Dltk0BUDcprQCkBPpanleEewJ5rm86f4r9/ELzG0w6LhBsjt10Opy7RpY3Hd6B/WrIRSvw==}
+  /@biomejs/cli-darwin-arm64@1.1.2:
+    resolution: {integrity: sha512-YyqWeNZchPxlvxtdo2vMBkzrwllaNS3+DZ6j01mUCVIZE9kAzF/edMV2O38L2AEtnRLU1TI1f71Jai3ThILClg==}
     engines: {node: '>=14.*'}
     cpu: [arm64]
     os: [darwin]
@@ -94,8 +94,8 @@ packages:
     dev: true
     optional: true
 
-  /@biomejs/cli-darwin-x64@1.1.0:
-    resolution: {integrity: sha512-LuJNjGCBR8LScKTuIIl/mcNVDq2yGfBRYTUAplEmJB/I2/pj2jaD69idaN9AAOodA23i3G1IuZCh4a/8KhFs3g==}
+  /@biomejs/cli-darwin-x64@1.1.2:
+    resolution: {integrity: sha512-Sofxcu50AHJyQS6Xx3OF2egQQ7Un5YFVF5/umNFa+kSNrrCu/ucmzrk8FcGS2dOSs4L2LqD6ZDWjvbcikjzLYQ==}
     engines: {node: '>=14.*'}
     cpu: [x64]
     os: [darwin]
@@ -103,8 +103,8 @@ packages:
     dev: true
     optional: true
 
-  /@biomejs/cli-linux-arm64@1.1.0:
-    resolution: {integrity: sha512-5D9waO1dB0nZg1TB9LNtc/PT9P5+sapF8J2NHPOzxttIWaM0NNUCJACCtJ8nDdd/pXXsFME2LYYrUeFSIBLD1Q==}
+  /@biomejs/cli-linux-arm64@1.1.2:
+    resolution: {integrity: sha512-wtaQgpoVMZEKf1GlDlFGAJP1j6gnh4L4kJN8PQPOBAdKIUZ/YSjqVp0z28vli5xCQ57xCn1gH4Xoqw2gVYu1tQ==}
     engines: {node: '>=14.*'}
     cpu: [arm64]
     os: [linux]
@@ -112,8 +112,8 @@ packages:
     dev: true
     optional: true
 
-  /@biomejs/cli-linux-x64@1.1.0:
-    resolution: {integrity: sha512-fsKs7kANBtTR8y/qqoWqIQPmkC7VtnsVN3sy5wmqzT7vjHyZPJoL1QDIiZlYDJO6pVBOjkRniNFCQhtXkZDfWA==}
+  /@biomejs/cli-linux-x64@1.1.2:
+    resolution: {integrity: sha512-TYIUjCXbY+kxnJgv8GESplMagB1GdOcMV21JGRATqnhUI4BvG6sjs3gfi+sdjLBQdbHhsISXW3yfUlv07HKqhg==}
     engines: {node: '>=14.*'}
     cpu: [x64]
     os: [linux]
@@ -121,8 +121,8 @@ packages:
     dev: true
     optional: true
 
-  /@biomejs/cli-win32-arm64@1.1.0:
-    resolution: {integrity: sha512-u/Q8IjfDFJh5lJx3bUJW2dS/qRtOdU31ZN750xQi5rot0zCHiIcVkQ+aLIREaftmWw4kbVCvJHnpSnZsNGLUqg==}
+  /@biomejs/cli-win32-arm64@1.1.2:
+    resolution: {integrity: sha512-yApn85KuJ+Ty5zxbqWnaifX4ONtZG+snu12RNKi8fxSVVCXzQ/k2PfsWQbsyvCG05qshSvNKtM54cuf+vhUIsw==}
     engines: {node: '>=14.*'}
     cpu: [arm64]
     os: [win32]
@@ -130,8 +130,8 @@ packages:
     dev: true
     optional: true
 
-  /@biomejs/cli-win32-x64@1.1.0:
-    resolution: {integrity: sha512-1KngaabxKQ0ai3P6UiL0d3tq6P5OQvZ9eVHhaqHkHnmY5th61+1EoILWu6zGKdKc2/O/HS+0qOgeFS8wTEHTaA==}
+  /@biomejs/cli-win32-x64@1.1.2:
+    resolution: {integrity: sha512-qebNvIrFj2TJ+K0JVGo1HkgV2y5jis6aOZDC1SWuk53GnqjSLdR+p1v86ZByOjYr1v+tjc67EXmEepk06VVvpA==}
     engines: {node: '>=14.*'}
     cpu: [x64]
     os: [win32]
@@ -448,8 +448,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
-  /aws-cdk-lib@2.94.0(constructs@10.2.70):
-    resolution: {integrity: sha512-pB/UzKeM+p/wY9WuFYkEewOFUh2r8qwaML63is4vUChXY2G2Bj3pGyfJ97Xir2Q5KIhgJPJz5igdouI4+F9A+g==}
+  /aws-cdk-lib@2.95.0(constructs@10.2.70):
+    resolution: {integrity: sha512-2G8QAldRI2Fa/ThaMyO04iLu9lER5AYKgrWshJ59L6JT4XraRTqh8sjti+ew4I6ADk6Zaprh2YcLRS2wTcICzA==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -481,8 +481,8 @@ packages:
       - table
       - yaml
 
-  /aws-cdk@2.94.0:
-    resolution: {integrity: sha512-9bJkzxFDYZDwPDfZi/DSUODn4HFRzuXWPhpFgIIgRykfT18P+iAIJ1AEhaaCmlqrrog5yQgN+2iYd9BwDsiBeg==}
+  /aws-cdk@2.95.0:
+    resolution: {integrity: sha512-3BBb9S6Wp5wC+zOZghuIC+Eu4pH0rOJAKUHTlaVUND1ePOxlEcxs2+Rww5jGTksi491q2WLwy8DiuymArhjA/w==}
     engines: {node: '>= 14.15.0'}
     hasBin: true
     optionalDependencies:
@@ -493,14 +493,14 @@ packages:
     resolution: {integrity: sha512-9GNFMRrEMG5y3Jvv+V4azWvc+qNWdWLTjDdhf/zgMlz8haaaLWv0xeAIWxz9PuWUBawsVxy0zZotjCdR3Xq+2w==}
     hasBin: true
     dependencies:
-      aws-sdk: 2.1452.0
+      aws-sdk: 2.1453.0
       commander: 3.0.2
       js-yaml: 3.14.1
       watchpack: 2.4.0
     dev: false
 
-  /aws-sdk@2.1452.0:
-    resolution: {integrity: sha512-PiCNbl3DPwiQPqQwkugfO+YaDxWz1BZ8m/05R7MSsOQ1VB9eXDNESASKkz9jEdDbM4u/olZIljV6HVZ9e6044g==}
+  /aws-sdk@2.1453.0:
+    resolution: {integrity: sha512-pNkz4gAuR2nnOAvq6P2/0wvcyQDY112VYQS4w+vqWcxwEuptcWmTynd8BH3foUHnwPaU+Z/BR6DaTnBSjOzR+Q==}
     engines: {node: '>= 10.0.0'}
     dependencies:
       buffer: 4.9.2

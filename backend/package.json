@@ -22,7 +22,7 @@
   "devDependencies": {
     "@biomejs/biome": "^1.2.2",
     "@types/aws-lambda": "^8.10.121",
-    "@types/node": "^20.6.2",
+    "@types/node": "^20.6.3",
     "@types/qs": "^6.9.8",
     "aws-cdk": "^2.96.2",
     "esbuild": "^0.19.3",
@@ -33,7 +33,7 @@
     "aws-cdk-lib": "^2.96.2",
     "aws-lambda": "^1.0.7",
     "constructs": "^10.2.70",
-    "graphql": "^16.8.0",
+    "graphql": "^16.8.1",
     "graphql-request": "^6.1.0",
     "qs": "^6.11.2",
     "source-map-support": "^0.5.21"

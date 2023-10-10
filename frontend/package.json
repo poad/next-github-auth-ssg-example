@@ -23,7 +23,7 @@
     "all": "pnpm build"
   },
   "dependencies": {
-    "@types/node": "^20.8.3",
+    "@types/node": "^20.8.4",
     "@types/react": "^18.2.25",
     "@types/uuid": "^9.0.5",
     "next": "^13.5.4",

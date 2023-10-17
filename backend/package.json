@@ -25,7 +25,7 @@
     "@types/node": "^20.8.5",
     "@types/qs": "^6.9.8",
     "aws-cdk": "^2.100.0",
-    "esbuild": "^0.19.4",
+    "esbuild": "^0.19.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },

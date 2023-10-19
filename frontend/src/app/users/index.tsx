@@ -28,7 +28,7 @@ export default function Users() {
 				response.json().then((json) => setDatabaseId(json.databaseId)),
 			);
 		}
-	}, [code]);
+	}, [code, databaseId, fetcher]);
 
 	useEffect(() => {
 		setCode(qs.parse(window.location.search).code?.toString());

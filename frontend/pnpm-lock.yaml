@@ -446,7 +446,7 @@ packages:
       '@types/http-cache-semantics': 4.0.3
       '@types/keyv': 3.1.4
       '@types/node': 20.8.10
-      '@types/responselike': 1.0.2
+      '@types/responselike': 1.0.3
     dev: true
 
   /@types/http-cache-semantics@4.0.3:
@@ -480,8 +480,8 @@ packages:
       csstype: 3.1.2
     dev: false
 
-  /@types/responselike@1.0.2:
-    resolution: {integrity: sha512-/4YQT5Kp6HxUDb4yhRkm0bJ7TbjvTddqX7PZ5hz6qV3pxSo72f/6YPRo+Mu2DU307tm9IioO69l7uAwn5XNcFA==}
+  /@types/responselike@1.0.3:
+    resolution: {integrity: sha512-H/+L+UkTV33uf49PH5pCAUBVPNj2nDBXTN+qS1dOwyyg24l3CcicicCA7ca+HMvJBZcFgl5r8e+RR6elsb4Lyw==}
     dependencies:
       '@types/node': 20.8.10
     dev: true
@@ -875,7 +875,7 @@ packages:
       '@sindresorhus/is': 4.6.0
       '@szmarczak/http-timer': 4.0.6
       '@types/cacheable-request': 6.0.3
-      '@types/responselike': 1.0.2
+      '@types/responselike': 1.0.3
       cacheable-lookup: 5.0.4
       cacheable-request: 7.0.4
       decompress-response: 6.0.0

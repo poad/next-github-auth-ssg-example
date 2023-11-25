@@ -1,6 +1,5 @@
 "use client";
 import Head from "next/head";
-import qs from "qs";
 import { useCallback, useEffect, useState } from "react";
 import GitHubSignInButton from "../../component/GitHubSignInButton";
 import styles from "./styles/Home.module.css";
@@ -31,7 +30,9 @@ export default function Users() {
 	}, [code, databaseId, fetcher]);
 
 	useEffect(() => {
-		setCode(qs.parse(window.location.search).code?.toString());
+		setCode(
+			new URLSearchParams(window.location.search).get("code")?.toString(),
+		);
 	}, []);
 
 	return (

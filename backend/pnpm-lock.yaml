@@ -38,8 +38,8 @@ devDependencies:
     specifier: ^20.10.5
     version: 20.10.5
   '@types/qs':
-    specifier: ^6.9.10
-    version: 6.9.10
+    specifier: ^6.9.11
+    version: 6.9.11
   aws-cdk:
     specifier: ^2.115.0
     version: 2.115.0
@@ -399,8 +399,8 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/qs@6.9.10:
-    resolution: {integrity: sha512-3Gnx08Ns1sEoCrWssEgTSJs/rsT2vhGP+Ja9cnnk9k4ALxinORlQneLXFeFKOTJMOeZUFD1s7w+w2AphTpvzZw==}
+  /@types/qs@6.9.11:
+    resolution: {integrity: sha512-oGk0gmhnEJK4Yyk+oI7EfXsLayXatCWPHary1MtcmbAifkobT9cM9yutG/hZKIseOU0MqbIwQ/u2nn/Gb+ltuQ==}
     dev: true
 
   /acorn-walk@8.3.1:
@@ -464,14 +464,14 @@ packages:
     resolution: {integrity: sha512-9GNFMRrEMG5y3Jvv+V4azWvc+qNWdWLTjDdhf/zgMlz8haaaLWv0xeAIWxz9PuWUBawsVxy0zZotjCdR3Xq+2w==}
     hasBin: true
     dependencies:
-      aws-sdk: 2.1523.0
+      aws-sdk: 2.1524.0
       commander: 3.0.2
       js-yaml: 3.14.1
       watchpack: 2.4.0
     dev: false
 
-  /aws-sdk@2.1523.0:
-    resolution: {integrity: sha512-Zodeu0h4NfpYs8B+5+OFEhkY5MJlhzAns8oocMQc2aZTiMx178qcxqD3FFltTUyLc0FFlY7ZGjoVfPnuky1MQg==}
+  /aws-sdk@2.1524.0:
+    resolution: {integrity: sha512-nJQ7q6ykflHWkyYaobgSYkKMrqkQLKObCLPN+FfePl9Y4ZCsRVBut59wbZiYmQw1K4QitSwuBjuMdH4ES8vOpg==}
     engines: {node: '>= 10.0.0'}
     dependencies:
       buffer: 4.9.2

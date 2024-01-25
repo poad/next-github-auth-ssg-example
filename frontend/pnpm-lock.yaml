@@ -27,8 +27,8 @@ dependencies:
     specifier: ^5.3.3
     version: 5.3.3
   web-vitals:
-    specifier: ^3.5.1
-    version: 3.5.1
+    specifier: ^3.5.2
+    version: 3.5.2
 
 devDependencies:
   '@biomejs/biome':
@@ -403,8 +403,8 @@ packages:
       js-tokens: 4.0.0
     dev: false
 
-  /lru-cache@10.1.0:
-    resolution: {integrity: sha512-/1clY/ui8CzjKFyjdvwPWJUYKiFVXG2I2cY0ssG7h4+hwk+XOIX7ZSG9Q7TW8TW3Kp3BUSqgFWBLgL4PJ+Blag==}
+  /lru-cache@10.2.0:
+    resolution: {integrity: sha512-2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==}
     engines: {node: 14 || >=16.14}
     dev: true
 
@@ -474,7 +474,7 @@ packages:
     resolution: {integrity: sha512-MkhCqzzBEpPvxxQ71Md0b1Kk51W01lrYvlMzSUaIzNsODdd7mqhiimSZlr+VegAz5Z6Vzt9Xg2ttE//XBhH3EQ==}
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
-      lru-cache: 10.1.0
+      lru-cache: 10.2.0
       minipass: 7.0.4
     dev: true
 
@@ -617,8 +617,8 @@ packages:
     hasBin: true
     dev: true
 
-  /web-vitals@3.5.1:
-    resolution: {integrity: sha512-xQ9lvIpfLxUj0eSmT79ZjRoU5wIRfIr7pNukL7ZE4EcWZSmfZQqOlhuAGfkVa3EFmzPHZhWhXfm2i5ys+THVPg==}
+  /web-vitals@3.5.2:
+    resolution: {integrity: sha512-c0rhqNcHXRkY/ogGDJQxZ9Im9D19hDihbzSQJrsioex+KnFgmMzBiy57Z1EjkhX/+OjyBpclDCzz2ITtjokFmg==}
     dev: false
 
   /which@2.0.2:

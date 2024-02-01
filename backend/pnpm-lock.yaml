@@ -35,8 +35,8 @@ devDependencies:
     specifier: ^8.10.133
     version: 8.10.133
   '@types/node':
-    specifier: ^20.11.14
-    version: 20.11.14
+    specifier: ^20.11.16
+    version: 20.11.16
   '@types/qs':
     specifier: ^6.9.11
     version: 6.9.11
@@ -48,7 +48,7 @@ devDependencies:
     version: 0.20.0
   ts-node:
     specifier: ^10.9.2
-    version: 10.9.2(@types/node@20.11.14)(typescript@5.3.3)
+    version: 10.9.2(@types/node@20.11.16)(typescript@5.3.3)
   typescript:
     specifier: ^5.3.3
     version: 5.3.3
@@ -413,8 +413,8 @@ packages:
     resolution: {integrity: sha512-sr852MAL/79rjDelXP6ZuJ6GwOvXIRrFAoC8a+w91mZ5XR71CuzSgo1d0+pG1qgfPhjFgaibu7SWaoC5BA7pyQ==}
     dev: true
 
-  /@types/node@20.11.14:
-    resolution: {integrity: sha512-w3yWCcwULefjP9DmDDsgUskrMoOy5Z8MiwKHr1FvqGPtx7CvJzQvxD7eKpxNtklQxLruxSXWddyeRtyud0RcXQ==}
+  /@types/node@20.11.16:
+    resolution: {integrity: sha512-gKb0enTmRCzXSSUJDq6/sPcqrfCv2mkkG6Jt/clpn5eiCbKTY+SgZUxo+p8ZKMof5dCp9vHQUAB7wOUTod22wQ==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -444,8 +444,8 @@ packages:
       sprintf-js: 1.0.3
     dev: false
 
-  /available-typed-arrays@1.0.5:
-    resolution: {integrity: sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==}
+  /available-typed-arrays@1.0.6:
+    resolution: {integrity: sha512-j1QzY8iPNPG4o4xmO3ptzpRxTciqD3MgEHtifP/YnJpIo58Xu+ne4BejlbkuaLfXn/nz6HFiw29bLpj2PNMdGg==}
     engines: {node: '>= 0.4'}
     dev: false
 
@@ -681,11 +681,9 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
-  /has-tostringtag@1.0.0:
-    resolution: {integrity: sha512-kFjcSNhnlGV1kyoGk7OXKSawH5JOb/LzUc5w9B02hOTO0dfFRjbHQKvg1d6cf3HbeUmtU9VbbV3qzZ2Teh97WQ==}
+  /has-tostringtag@1.0.1:
+    resolution: {integrity: sha512-6J4rC9ROz0UkOpjn0BRtSSqlewDTDYJNQvy8N8RSrPCduUWId1o9BQPEVII/KKBqRk/ZIQff1YbRkUDCH2N5Sg==}
     engines: {node: '>= 0.4'}
-    dependencies:
-      has-symbols: 1.0.3
     dev: false
 
   /hasown@2.0.0:
@@ -708,7 +706,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.5
-      has-tostringtag: 1.0.0
+      has-tostringtag: 1.0.1
     dev: false
 
   /is-callable@1.2.7:
@@ -720,7 +718,7 @@ packages:
     resolution: {integrity: sha512-jsEjy9l3yiXEQ+PsXdmBwEPcOxaXWLspKdplFUVI9vq1iZgIekeC0L167qeu86czQaxed3q/Uzuw0swL0irL8A==}
     engines: {node: '>= 0.4'}
     dependencies:
-      has-tostringtag: 1.0.0
+      has-tostringtag: 1.0.1
     dev: false
 
   /is-typed-array@1.1.12:
@@ -827,7 +825,7 @@ packages:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
     dev: false
 
-  /ts-node@10.9.2(@types/node@20.11.14)(typescript@5.3.3):
+  /ts-node@10.9.2(@types/node@20.11.16)(typescript@5.3.3):
     resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
     hasBin: true
     peerDependencies:
@@ -846,7 +844,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.11.14
+      '@types/node': 20.11.16
       acorn: 8.11.3
       acorn-walk: 8.3.2
       arg: 4.1.3
@@ -917,11 +915,11 @@ packages:
     resolution: {integrity: sha512-P5Nra0qjSncduVPEAr7xhoF5guty49ArDTwzJ/yNuPIbZppyRxFQsRCWrocxIY+CnMVG+qfbU2FmDKyvSGClow==}
     engines: {node: '>= 0.4'}
     dependencies:
-      available-typed-arrays: 1.0.5
+      available-typed-arrays: 1.0.6
       call-bind: 1.0.5
       for-each: 0.3.3
       gopd: 1.0.1
-      has-tostringtag: 1.0.0
+      has-tostringtag: 1.0.1
     dev: false
 
   /xml2js@0.6.2:

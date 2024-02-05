@@ -565,8 +565,8 @@ packages:
     engines: {node: '>=0.3.1'}
     dev: true
 
-  /es-errors@1.0.0:
-    resolution: {integrity: sha512-yHV74THqMJUyFKkHyN7hyENcEZM3Dj2a2IrdClY+IT4BFQHkIVwlh8s6uZfjsFydMdNHv0F5mWgAA3ajFbsvVQ==}
+  /es-errors@1.1.0:
+    resolution: {integrity: sha512-ka/z/Hxav2YGgkzSwOp1ugbUk6fgIX5gI69PfRHCvODD+LuVOnV1jHPBWXBNPZqX0O900p2I+IdM9sEbac0BNA==}
     engines: {node: '>= 0.4'}
     dev: false
 
@@ -634,7 +634,7 @@ packages:
     resolution: {integrity: sha512-JIcZczvcMVE7AUOP+X72bh8HqHBRxFdz5PDHYtNG/lE3yk9b3KZBJlwFcTyPYjg3L4RLLmZJzvjxhaZVapxFrQ==}
     engines: {node: '>= 0.4'}
     dependencies:
-      es-errors: 1.0.0
+      es-errors: 1.1.0
       function-bind: 1.1.2
       has-proto: 1.0.1
       has-symbols: 1.0.3

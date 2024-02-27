@@ -22,8 +22,8 @@
   "devDependencies": {
     "@biomejs/biome": "^1.5.3",
     "@types/aws-lambda": "^8.10.134",
-    "@types/node": "^20.11.20",
-    "@types/qs": "^6.9.11",
+    "@types/node": "^20.11.21",
+    "@types/qs": "^6.9.12",
     "aws-cdk": "^2.130.0",
     "esbuild": "^0.20.1",
     "ts-node": "^10.9.2",

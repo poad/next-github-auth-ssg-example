@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import "./styles/globals.css";
 
 export default function Document({ children }: { children: ReactNode }) {

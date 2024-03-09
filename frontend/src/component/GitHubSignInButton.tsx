@@ -1,5 +1,5 @@
 "use client";
-import * as crypto from "crypto";
+import * as crypto from "node:crypto";
 import { Inter } from "next/font/google";
 import { v4 as uuidv4 } from "uuid";
 

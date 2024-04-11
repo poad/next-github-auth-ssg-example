@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   aws-cdk-lib:
-    specifier: ^2.136.1
-    version: 2.136.1(constructs@10.3.0)
+    specifier: ^2.137.0
+    version: 2.137.0(constructs@10.3.0)
   aws-lambda:
     specifier: ^1.0.7
     version: 1.0.7
@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^6.9.14
     version: 6.9.14
   aws-cdk:
-    specifier: ^2.136.1
-    version: 2.136.1
+    specifier: ^2.137.0
+    version: 2.137.0
   esbuild:
     specifier: ^0.20.2
     version: 0.20.2
@@ -451,8 +451,8 @@ packages:
       possible-typed-array-names: 1.0.0
     dev: false
 
-  /aws-cdk-lib@2.136.1(constructs@10.3.0):
-    resolution: {integrity: sha512-2wlTABbgaVqARlCGyG88uY4oSNnXdGxD54bb71VxM6YBKk2qxUiKdUcu5wKeSiz+/VNT8Kv7nItTPPFxEY82RA==}
+  /aws-cdk-lib@2.137.0(constructs@10.3.0):
+    resolution: {integrity: sha512-pD3AGdKBa8q1+vVWRabiDHuecVMlP8ERGPHc9Pb0dVlpbC/ODC6XXC1S0TAMsr0JI5Lh6pk4vL5cC+spsMeotw==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -475,8 +475,8 @@ packages:
       - yaml
       - mime-types
 
-  /aws-cdk@2.136.1:
-    resolution: {integrity: sha512-CkmyGrXFCeKD3P1uFRIwrx3C5uFtnZhlKwItpAcXPdPEcnfwsMUJuh/QdcKXXrP7hKsxqrTivrRLwcnFZ9KvyA==}
+  /aws-cdk@2.137.0:
+    resolution: {integrity: sha512-3pf3SVDwNZvo3EfhO3yl1B+KbRHz7T4UmPifUEKfOwk7ABAFLRSNddZuUlF560XSBTFLkrZoeBDa0/MLJT6F4g==}
     engines: {node: '>= 14.15.0'}
     hasBin: true
     optionalDependencies:
@@ -487,14 +487,14 @@ packages:
     resolution: {integrity: sha512-9GNFMRrEMG5y3Jvv+V4azWvc+qNWdWLTjDdhf/zgMlz8haaaLWv0xeAIWxz9PuWUBawsVxy0zZotjCdR3Xq+2w==}
     hasBin: true
     dependencies:
-      aws-sdk: 2.1596.0
+      aws-sdk: 2.1597.0
       commander: 3.0.2
       js-yaml: 3.14.1
       watchpack: 2.4.1
     dev: false
 
-  /aws-sdk@2.1596.0:
-    resolution: {integrity: sha512-0C0TGFW3ANoZ1AkSKIIjTpEfN9WQ7jbwLODsdU2TIPkJBuv7UcOkTPuKoiowhi5sOFZmyx58SG3g12j+BJpyEg==}
+  /aws-sdk@2.1597.0:
+    resolution: {integrity: sha512-YvApP9p5a5TD870mvQRrcUyJz3nKFrtlnDLaA4yrmAaidMDGzdNJ+AZlW0+onRCB4llzKD4Hos56zea0ulR+zQ==}
     engines: {node: '>= 10.0.0'}
     requiresBuild: true
     dependencies:

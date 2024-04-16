@@ -38,8 +38,8 @@ devDependencies:
     specifier: ^20.12.7
     version: 20.12.7
   '@types/qs':
-    specifier: ^6.9.14
-    version: 6.9.14
+    specifier: ^6.9.15
+    version: 6.9.15
   aws-cdk:
     specifier: ^2.137.0
     version: 2.137.0
@@ -419,8 +419,8 @@ packages:
       undici-types: 5.26.5
     dev: true
 
-  /@types/qs@6.9.14:
-    resolution: {integrity: sha512-5khscbd3SwWMhFqylJBLQ0zIu7c1K6Vz0uBIt915BI3zV0q1nfjRQD3RqSBcPaO6PHEF4ov/t9y89fSiyThlPA==}
+  /@types/qs@6.9.15:
+    resolution: {integrity: sha512-uXHQKES6DQKKCLh441Xv/dwxOq1TVS3JPUMlEqoEglvlhR6Mxnlew/Xq/LRVHpLyk7iK3zODe1qYHIMltO7XGg==}
     dev: true
 
   /acorn-walk@8.3.2:

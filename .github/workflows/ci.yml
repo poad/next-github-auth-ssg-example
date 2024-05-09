@@ -21,15 +21,6 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - uses: pnpm/action-setup@v4
-      name: Install pnpm
-      id: pnpm-install
-      with:
-        version: latest
-        run_install: |
-          - recursive: true
-            args: [--no-frozen-lockfile]
-
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4.0.2
       with:
@@ -41,6 +32,13 @@ jobs:
           backend/pnpm-lock.yaml
           frontend/pnpm-lock.yaml
           frontend/cdk/pnpm-lock.yaml
+
+    - uses: pnpm/action-setup@v4
+      name: Install pnpm
+      with:
+        run_install: |
+          - recursive: true
+            args: [--no-frozen-lockfile]
 
     - name: Build
       env:

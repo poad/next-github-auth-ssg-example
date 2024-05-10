@@ -1,5 +1,5 @@
 {
-  "app": "pnpm lint && npx npx ts-node --prefer-ts-exts bin/backend.ts",
+  "app": "pnpm lint && npx node --loader ts-node/esm bin/backend.ts",
   "watch": {
     "include": [
       "**"

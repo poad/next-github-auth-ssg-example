@@ -35,7 +35,7 @@
     "aws-lambda": "^1.0.7",
     "constructs": "^10.3.0",
     "graphql": "^16.8.1",
-    "graphql-request": "^6.1.0",
+    "graphql-request": "^7.0.0",
     "qs": "^6.12.1",
     "source-map-support": "^0.5.21"
   }

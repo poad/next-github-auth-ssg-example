@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.7.3",
-    "rimraf": "^5.0.5",
+    "rimraf": "^5.0.7",
     "uuid": "^9.0.1"
   }
 }

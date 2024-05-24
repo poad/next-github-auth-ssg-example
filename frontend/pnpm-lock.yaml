@@ -240,8 +240,8 @@ packages:
     resolution: {integrity: sha512-TMKDUnIte6bfb5nWv7V/caI169OHgvwjb7V4WkeUvbQQdjr5rWKqHFiKWb/fcOwB+CzBT+qbWjvj+DVwRskpIg==}
     engines: {node: '>=14'}
 
-  glob@10.4.0:
-    resolution: {integrity: sha512-+K6CicMIL11UEbC3gH/MVxgGG4gJDMu9tPD+nH+d6W3+y2fYuDSbpa2b+EGyvCGvSN/PT/7daJTH25NknJkcIQ==}
+  glob@10.4.1:
+    resolution: {integrity: sha512-2jelhlq3E4ho74ZyVLN03oKdAZVUa6UDZzFLVH1H7dnoax+y9qyaq8zBkfDIggjniU19z0wU18y16jMB2eyVIw==}
     engines: {node: '>=16 || 14 >=14.18'}
     hasBin: true
 
@@ -560,7 +560,7 @@ snapshots:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
 
-  glob@10.4.0:
+  glob@10.4.1:
     dependencies:
       foreground-child: 3.1.1
       jackspeak: 3.1.2
@@ -648,7 +648,7 @@ snapshots:
 
   rimraf@5.0.7:
     dependencies:
-      glob: 10.4.0
+      glob: 10.4.1
 
   scheduler@0.23.2:
     dependencies:

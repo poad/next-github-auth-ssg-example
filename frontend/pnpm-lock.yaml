@@ -30,8 +30,8 @@ importers:
         specifier: ^5.4.5
         version: 5.4.5
       web-vitals:
-        specifier: ^4.0.1
-        version: 4.0.1
+        specifier: ^4.1.0
+        version: 4.1.0
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.8.0
@@ -397,8 +397,8 @@ packages:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
     hasBin: true
 
-  web-vitals@4.0.1:
-    resolution: {integrity: sha512-AW6qT/vXK3pbf+WgVcEBXY//AWCpXjVKgdb6rt0cARSUdtT+NUtZCOeo+CSLUX7PjSQ275DmxfkAs7QlPbtR6w==}
+  web-vitals@4.1.0:
+    resolution: {integrity: sha512-wz5ubPZK7DSKrlQvjsaCqdfa+9AjAYoUzj9GDzUmBTdfyfyl1fOIjfTh46DGKM8MdN+lcbNY8ObXo6TmHqRzVw==}
 
   which@2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
@@ -699,7 +699,7 @@ snapshots:
 
   uuid@9.0.1: {}
 
-  web-vitals@4.0.1: {}
+  web-vitals@4.1.0: {}
 
   which@2.0.2:
     dependencies:

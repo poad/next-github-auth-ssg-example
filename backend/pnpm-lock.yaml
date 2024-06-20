@@ -37,8 +37,8 @@ importers:
         specifier: ^8.10.140
         version: 8.10.140
       '@types/node':
-        specifier: ^20.14.4
-        version: 20.14.4
+        specifier: ^20.14.6
+        version: 20.14.6
       '@types/qs':
         specifier: ^6.9.15
         version: 6.9.15
@@ -50,7 +50,7 @@ importers:
         version: 0.21.5
       ts-node:
         specifier: ^10.9.2
-        version: 10.9.2(@types/node@20.14.4)(typescript@5.4.5)
+        version: 10.9.2(@types/node@20.14.6)(typescript@5.4.5)
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
@@ -338,8 +338,8 @@ packages:
   '@types/aws-lambda@8.10.140':
     resolution: {integrity: sha512-4Dh3dk2TUcbdfHrX0Al90mNGJDvA9NBiTQPzbrjGi/dLxzKCGOYgT8YQ47jUKNFALkAJAadifq0pzyjIUlhVhg==}
 
-  '@types/node@20.14.4':
-    resolution: {integrity: sha512-1ChboN+57suCT2t/f8lwtPY/k3qTpuD/qnqQuYoBg6OQOcPyaw7PiZVdGpaZYAvhDDtqrt0oAaM8+oSu1xsUGw==}
+  '@types/node@20.14.6':
+    resolution: {integrity: sha512-JbA0XIJPL1IiNnU7PFxDXyfAwcwVVrOoqyzzyQTyMeVhBzkJVMSkC1LlVsRQ2lpqiY4n6Bb9oCS6lzDKVQxbZw==}
 
   '@types/qs@6.9.15':
     resolution: {integrity: sha512-uXHQKES6DQKKCLh441Xv/dwxOq1TVS3JPUMlEqoEglvlhR6Mxnlew/Xq/LRVHpLyk7iK3zODe1qYHIMltO7XGg==}
@@ -397,8 +397,8 @@ packages:
     resolution: {integrity: sha512-9GNFMRrEMG5y3Jvv+V4azWvc+qNWdWLTjDdhf/zgMlz8haaaLWv0xeAIWxz9PuWUBawsVxy0zZotjCdR3Xq+2w==}
     hasBin: true
 
-  aws-sdk@2.1643.0:
-    resolution: {integrity: sha512-1k8W0cU7K9rPwPBzv84Z2IE5aT3jhv3Jswn8XerZliiLl1MTj6F4wjxCeY5BpmAv+Zyy4zM0w98M8vVqKeHEeA==}
+  aws-sdk@2.1645.0:
+    resolution: {integrity: sha512-KCKKXes0epWsNppMWt2FkTtKTwRJBGIQre3er1weNay8YmF3JTXueRCB/mEk1WFfFq273SPOxl/pj5kH04KjYw==}
     engines: {node: '>= 10.0.0'}
 
   base64-js@1.5.1:
@@ -862,7 +862,7 @@ snapshots:
 
   '@types/aws-lambda@8.10.140': {}
 
-  '@types/node@20.14.4':
+  '@types/node@20.14.6':
     dependencies:
       undici-types: 5.26.5
 
@@ -906,12 +906,12 @@ snapshots:
 
   aws-lambda@1.0.7:
     dependencies:
-      aws-sdk: 2.1643.0
+      aws-sdk: 2.1645.0
       commander: 3.0.2
       js-yaml: 3.14.1
       watchpack: 2.4.1
 
-  aws-sdk@2.1643.0:
+  aws-sdk@2.1645.0:
     dependencies:
       buffer: 4.9.2
       events: 1.1.1
@@ -1144,14 +1144,14 @@ snapshots:
     dependencies:
       ansi-regex: 6.0.1
 
-  ts-node@10.9.2(@types/node@20.14.4)(typescript@5.4.5):
+  ts-node@10.9.2(@types/node@20.14.6)(typescript@5.4.5):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.14.4
+      '@types/node': 20.14.6
       acorn: 8.12.0
       acorn-walk: 8.3.3
       arg: 4.1.3

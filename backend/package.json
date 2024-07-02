@@ -25,18 +25,18 @@
     "@types/aws-lambda": "^8.10.140",
     "@types/node": "^20.14.9",
     "@types/qs": "^6.9.15",
-    "aws-cdk": "^2.147.2",
-    "esbuild": "^0.22.0",
+    "aws-cdk": "^2.147.3",
+    "esbuild": "^0.23.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.3"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.147.2",
+    "aws-cdk-lib": "^2.147.3",
     "aws-lambda": "^1.0.7",
     "constructs": "^10.3.0",
     "graphql": "^16.9.0",
     "graphql-request": "^7.1.0",
-    "qs": "^6.12.1",
+    "qs": "^6.12.2",
     "source-map-support": "^0.5.21"
   }
 }

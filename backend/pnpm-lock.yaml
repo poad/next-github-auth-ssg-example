@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       aws-cdk-lib:
-        specifier: ^2.147.3
-        version: 2.147.3(constructs@10.3.0)
+        specifier: ^2.148.0
+        version: 2.148.0(constructs@10.3.0)
       aws-lambda:
         specifier: ^1.0.7
         version: 1.0.7
@@ -37,20 +37,20 @@ importers:
         specifier: ^8.10.140
         version: 8.10.140
       '@types/node':
-        specifier: ^20.14.9
-        version: 20.14.9
+        specifier: ^20.14.10
+        version: 20.14.10
       '@types/qs':
         specifier: ^6.9.15
         version: 6.9.15
       aws-cdk:
-        specifier: ^2.147.3
-        version: 2.147.3
+        specifier: ^2.148.0
+        version: 2.148.0
       esbuild:
         specifier: ^0.23.0
         version: 0.23.0
       ts-node:
         specifier: ^10.9.2
-        version: 10.9.2(@types/node@20.14.9)(typescript@5.5.3)
+        version: 10.9.2(@types/node@20.14.10)(typescript@5.5.3)
       typescript:
         specifier: ^5.5.3
         version: 5.5.3
@@ -306,8 +306,8 @@ packages:
   '@types/aws-lambda@8.10.140':
     resolution: {integrity: sha512-4Dh3dk2TUcbdfHrX0Al90mNGJDvA9NBiTQPzbrjGi/dLxzKCGOYgT8YQ47jUKNFALkAJAadifq0pzyjIUlhVhg==}
 
-  '@types/node@20.14.9':
-    resolution: {integrity: sha512-06OCtnTXtWOZBJlRApleWndH4JsRVs1pDCc8dLSQp+7PpUpX3ePdHyeNSFTeSe7FtKyQkrlPvHwJOW3SLd8Oyg==}
+  '@types/node@20.14.10':
+    resolution: {integrity: sha512-MdiXf+nDuMvY0gJKxyfZ7/6UFsETO7mGKF54MVD/ekJS6HdFtpZFBgrh6Pseu64XTb2MLyFPlbW6hj8HYRQNOQ==}
 
   '@types/qs@6.9.15':
     resolution: {integrity: sha512-uXHQKES6DQKKCLh441Xv/dwxOq1TVS3JPUMlEqoEglvlhR6Mxnlew/Xq/LRVHpLyk7iK3zODe1qYHIMltO7XGg==}
@@ -338,8 +338,8 @@ packages:
     resolution: {integrity: sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ==}
     engines: {node: '>= 0.4'}
 
-  aws-cdk-lib@2.147.3:
-    resolution: {integrity: sha512-GX07otmLydgR3CX51OaDtDr/MXRbsl9HZ2txVQpEV3pkF0UpJVc7XLShYuHmVv0uyStnAQfEN6W89cXMK64Nlg==}
+  aws-cdk-lib@2.148.0:
+    resolution: {integrity: sha512-Pa0pyIHlhnsqtMkPJS3tnptYhoOSNDOgoFurNB4Qfa0vnAkjYQ+JKQkR1tNNr8+UtO9jUfXRklQgjEqlFlrgBA==}
     engines: {node: '>= 14.15.0'}
     peerDependencies:
       constructs: ^10.0.0
@@ -356,8 +356,8 @@ packages:
       - yaml
       - mime-types
 
-  aws-cdk@2.147.3:
-    resolution: {integrity: sha512-Y+o2eONCMQ2xwLpeUevwOeShxhlmW42Qx1uBWreF9fKzCeFkZ/in66FlaCBKlLXtKPQOdhmWNWKJ9A+pE+L+5A==}
+  aws-cdk@2.148.0:
+    resolution: {integrity: sha512-nuCWY8I0xkIz7B2LjIL4h/xLHWTFhINL8i2fdA0BPq8t0byhLaNw5wggvztDjWH5xq5I1DM3laiv4/q5S21Xrg==}
     engines: {node: '>= 14.15.0'}
     hasBin: true
 
@@ -365,8 +365,8 @@ packages:
     resolution: {integrity: sha512-9GNFMRrEMG5y3Jvv+V4azWvc+qNWdWLTjDdhf/zgMlz8haaaLWv0xeAIWxz9PuWUBawsVxy0zZotjCdR3Xq+2w==}
     hasBin: true
 
-  aws-sdk@2.1654.0:
-    resolution: {integrity: sha512-b5ryvXipBJod9Uh1GUfQNgi5tIIiluxJbyqr/hZ/mr5U8WxrrfjVq3nGnx5JjevFKYRqXIywhumsVyanfACzFA==}
+  aws-sdk@2.1655.0:
+    resolution: {integrity: sha512-Tec0/ZHK8ES6NvAEJhgEm3znyoPb4QUuyQZ2RdvbNTbpJDbeeDuu4BaCAR5HbEVXREVk1/8OBDMsWW1B5lkcww==}
     engines: {node: '>= 10.0.0'}
 
   base64-js@1.5.1:
@@ -818,7 +818,7 @@ snapshots:
 
   '@types/aws-lambda@8.10.140': {}
 
-  '@types/node@20.14.9':
+  '@types/node@20.14.10':
     dependencies:
       undici-types: 5.26.5
 
@@ -849,25 +849,25 @@ snapshots:
     dependencies:
       possible-typed-array-names: 1.0.0
 
-  aws-cdk-lib@2.147.3(constructs@10.3.0):
+  aws-cdk-lib@2.148.0(constructs@10.3.0):
     dependencies:
       '@aws-cdk/asset-awscli-v1': 2.2.202
       '@aws-cdk/asset-kubectl-v20': 2.1.2
       '@aws-cdk/asset-node-proxy-agent-v6': 2.0.3
       constructs: 10.3.0
 
-  aws-cdk@2.147.3:
+  aws-cdk@2.148.0:
     optionalDependencies:
       fsevents: 2.3.2
 
   aws-lambda@1.0.7:
     dependencies:
-      aws-sdk: 2.1654.0
+      aws-sdk: 2.1655.0
       commander: 3.0.2
       js-yaml: 3.14.1
       watchpack: 2.4.1
 
-  aws-sdk@2.1654.0:
+  aws-sdk@2.1655.0:
     dependencies:
       buffer: 4.9.2
       events: 1.1.1
@@ -1090,14 +1090,14 @@ snapshots:
     dependencies:
       ansi-regex: 6.0.1
 
-  ts-node@10.9.2(@types/node@20.14.9)(typescript@5.5.3):
+  ts-node@10.9.2(@types/node@20.14.10)(typescript@5.5.3):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 20.14.9
+      '@types/node': 20.14.10
       acorn: 8.12.1
       acorn-walk: 8.3.3
       arg: 4.1.3

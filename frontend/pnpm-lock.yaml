@@ -37,8 +37,8 @@ importers:
         specifier: ^1.8.3
         version: 1.8.3
       rimraf:
-        specifier: ^5.0.9
-        version: 5.0.9
+        specifier: ^6.0.0
+        version: 6.0.0
       uuid:
         specifier: ^10.0.0
         version: 10.0.0
@@ -240,9 +240,9 @@ packages:
     resolution: {integrity: sha512-PXUUyLqrR2XCWICfv6ukppP96sdFwWbNEnfEMt7jNsISjMsvaLNinAHNDYyvkyU+SZG2BTSbT5NjG+vZslfGTA==}
     engines: {node: '>=14'}
 
-  glob@10.4.4:
-    resolution: {integrity: sha512-XsOKvHsu38Xe19ZQupE6N/HENeHQBA05o3hV8labZZT2zYDg1+emxWHnc/Bm9AcCMPXfD6jt+QC7zC5JSFyumw==}
-    engines: {node: 14 >=14.21 || 16 >=16.20 || 18 || 20 || >=22}
+  glob@11.0.0:
+    resolution: {integrity: sha512-9UiX/Bl6J2yaBbxKoEBRm4Cipxgok8kQYcOPEhScPwebu2I0HoQOuYdIO6S3hLuWoZgpDpwQZMzTFxgpkyT76g==}
+    engines: {node: 20 || >=22}
     hasBin: true
 
   graceful-fs@4.2.11:
@@ -255,9 +255,9 @@ packages:
   isexe@2.0.0:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
-  jackspeak@3.4.2:
-    resolution: {integrity: sha512-qH3nOSj8q/8+Eg8LUPOq3C+6HWkpUioIjDsq1+D4zY91oZvpPttw8GwtF1nReRYKXl+1AORyFqtm2f5Q1SB6/Q==}
-    engines: {node: 14 >=14.21 || 16 >=16.20 || >=18}
+  jackspeak@4.0.1:
+    resolution: {integrity: sha512-cub8rahkh0Q/bw1+GxP7aeSe29hHHn2V4m29nnDlvCdlgU+3UGxkZp7Z53jLUdpX3jdTO0nJZUDl3xvbWc2Xog==}
+    engines: {node: 20 || >=22}
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -266,13 +266,13 @@ packages:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
 
-  lru-cache@10.4.2:
-    resolution: {integrity: sha512-voV4dDrdVZVNz84n39LFKDaRzfwhdzJ7akpyXfTMxCgRUp07U3lcJUXRlhTKP17rgt09sUzLi5iCitpEAr+6ug==}
-    engines: {node: 14 || 16 || 18 || 20 || >=22}
+  lru-cache@11.0.0:
+    resolution: {integrity: sha512-Qv32eSV1RSCfhY3fpPE2GNZ8jgM9X7rdAfemLWqTUxwiyIC4jJ6Sy0fZ8H+oLWevO6i4/bizg7c8d8i6bxrzbA==}
+    engines: {node: 20 || >=22}
 
-  minimatch@9.0.5:
-    resolution: {integrity: sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow==}
-    engines: {node: '>=16 || 14 >=14.17'}
+  minimatch@10.0.1:
+    resolution: {integrity: sha512-ethXTt3SGGR+95gudmqJ1eNhRO7eGEGIgYA9vnPatK4/etz2MEVDno5GMCibdMTuBMyElzIlgxMna3K94XDIDQ==}
+    engines: {node: 20 || >=22}
 
   minipass@7.1.2:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
@@ -308,9 +308,9 @@ packages:
     resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==}
     engines: {node: '>=8'}
 
-  path-scurry@1.11.1:
-    resolution: {integrity: sha512-Xa4Nw17FS9ApQFJ9umLiJS4orGjm7ZzwUrwamcGQuHSzDyth9boKDaycYdDcZDuqYATXw4HFXgaqWTctW/v1HA==}
-    engines: {node: '>=16 || 14 >=14.18'}
+  path-scurry@2.0.0:
+    resolution: {integrity: sha512-ypGJsmGtdXUOeM5u93TyeIEfEhM6s+ljAhrk5vAvSx8uyY/02OvrZnA0YNGUrPXfpJMgI1ODd3nwz8Npx4O4cg==}
+    engines: {node: 20 || >=22}
 
   picocolors@1.0.1:
     resolution: {integrity: sha512-anP1Z8qwhkbmu7MFP5iTt+wQKXgwzf7zTyGlcdzabySa9vd0Xt392U0rVmz9poOaBj0uHJKyyo9/upk0HrEQew==}
@@ -328,9 +328,9 @@ packages:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
     engines: {node: '>=0.10.0'}
 
-  rimraf@5.0.9:
-    resolution: {integrity: sha512-3i7b8OcswU6CpU8Ej89quJD4O98id7TtVM5U4Mybh84zQXdrFmDLouWBEEaD/QfO3gDDfH+AGFCGsR7kngzQnA==}
-    engines: {node: 14 >=14.20 || 16 >=16.20 || >=18}
+  rimraf@6.0.0:
+    resolution: {integrity: sha512-u+yqhM92LW+89cxUQK0SRyvXYQmyuKHx0jkx4W7KfwLGLqJnQM5031Uv1trE4gB9XEXBM/s6MxKlfW95IidqaA==}
+    engines: {node: 20 || >=22}
     hasBin: true
 
   scheduler@0.23.2:
@@ -563,14 +563,14 @@ snapshots:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
 
-  glob@10.4.4:
+  glob@11.0.0:
     dependencies:
       foreground-child: 3.2.1
-      jackspeak: 3.4.2
-      minimatch: 9.0.5
+      jackspeak: 4.0.1
+      minimatch: 10.0.1
       minipass: 7.1.2
       package-json-from-dist: 1.0.0
-      path-scurry: 1.11.1
+      path-scurry: 2.0.0
 
   graceful-fs@4.2.11: {}
 
@@ -578,7 +578,7 @@ snapshots:
 
   isexe@2.0.0: {}
 
-  jackspeak@3.4.2:
+  jackspeak@4.0.1:
     dependencies:
       '@isaacs/cliui': 8.0.2
     optionalDependencies:
@@ -590,9 +590,9 @@ snapshots:
     dependencies:
       js-tokens: 4.0.0
 
-  lru-cache@10.4.2: {}
+  lru-cache@11.0.0: {}
 
-  minimatch@9.0.5:
+  minimatch@10.0.1:
     dependencies:
       brace-expansion: 2.0.1
 
@@ -629,9 +629,9 @@ snapshots:
 
   path-key@3.1.1: {}
 
-  path-scurry@1.11.1:
+  path-scurry@2.0.0:
     dependencies:
-      lru-cache: 10.4.2
+      lru-cache: 11.0.0
       minipass: 7.1.2
 
   picocolors@1.0.1: {}
@@ -652,9 +652,9 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
 
-  rimraf@5.0.9:
+  rimraf@6.0.0:
     dependencies:
-      glob: 10.4.4
+      glob: 11.0.0
 
   scheduler@0.23.2:
     dependencies:

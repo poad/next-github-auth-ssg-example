@@ -36,7 +36,7 @@
     "constructs": "^10.3.0",
     "graphql": "^16.9.0",
     "graphql-request": "^7.1.0",
-    "qs": "^6.12.3",
+    "qs": "^6.13.0",
     "source-map-support": "^0.5.21"
   }
 }

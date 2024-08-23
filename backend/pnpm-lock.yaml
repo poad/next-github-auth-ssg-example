@@ -372,8 +372,8 @@ packages:
     resolution: {integrity: sha512-9GNFMRrEMG5y3Jvv+V4azWvc+qNWdWLTjDdhf/zgMlz8haaaLWv0xeAIWxz9PuWUBawsVxy0zZotjCdR3Xq+2w==}
     hasBin: true
 
-  aws-sdk@2.1680.0:
-    resolution: {integrity: sha512-XHNyhvVB49DC7Ea7+Gsvy4B+xP7tyry6Gw3b9g/DcilA1xmxxRzu8VE9GJ2rP4jYMc/TkX9FHkp5WLo57sITZA==}
+  aws-sdk@2.1681.0:
+    resolution: {integrity: sha512-oeCr0muJraT+g7ceTMlJcidVayPMfT69EEvDIWMbeBIHqbLOJVtpsF577VZJNEh2Zkj+8DivR69kWdu+Y9JSyQ==}
     engines: {node: '>= 10.0.0'}
 
   base64-js@1.5.1:
@@ -872,12 +872,12 @@ snapshots:
 
   aws-lambda@1.0.7:
     dependencies:
-      aws-sdk: 2.1680.0
+      aws-sdk: 2.1681.0
       commander: 3.0.2
       js-yaml: 3.14.1
       watchpack: 2.4.2
 
-  aws-sdk@2.1680.0:
+  aws-sdk@2.1681.0:
     dependencies:
       buffer: 4.9.2
       events: 1.1.1

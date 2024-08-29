@@ -66,8 +66,8 @@ packages:
   '@aws-cdk/asset-node-proxy-agent-v6@2.0.3':
     resolution: {integrity: sha512-twhuEG+JPOYCYPx/xy5uH2+VUsIEhPTzDY0F1KuB+ocjWWB/KEDiOVL19nHvbPCB6fhWnkykXEMJ4HHcKvjtvg==}
 
-  '@aws-cdk/cloud-assembly-schema@36.0.19':
-    resolution: {integrity: sha512-hl8IJpoSMNwUWc1OoTrA4IlFX920/o95oKPiChvQyfcUPedscolM0ThiJqsh1XjpXE1G40JBgOdi3MN1hrrslA==}
+  '@aws-cdk/cloud-assembly-schema@36.0.20':
+    resolution: {integrity: sha512-pvuY9V431KwTZJtO/eeH3j34vF2I4VadXHX1RMQcsSFy4a2v2VZyAbXXI6s0Cc7X7bwZDfWdsfjjNhspO0nr2w==}
     engines: {node: '>= 18.18.0'}
     bundledDependencies:
       - jsonschema
@@ -372,8 +372,8 @@ packages:
     resolution: {integrity: sha512-9GNFMRrEMG5y3Jvv+V4azWvc+qNWdWLTjDdhf/zgMlz8haaaLWv0xeAIWxz9PuWUBawsVxy0zZotjCdR3Xq+2w==}
     hasBin: true
 
-  aws-sdk@2.1684.0:
-    resolution: {integrity: sha512-Womhydf2UhEeLALLOUEDIuJ1Iv2k9aOsqAeDaQT3AhayiYt7pguvncs5IgEAxZ0TRH7driA7kTk+iGnCP2jMMA==}
+  aws-sdk@2.1685.0:
+    resolution: {integrity: sha512-axo1by16nZXqHAFu65+/pLnqqaU3ez5ko3jTGDt0byafT7XD948z3WqqrXWT9vJTUF93DdTZ9DEcazj4Ai91cQ==}
     engines: {node: '>= 10.0.0'}
 
   base64-js@1.5.1:
@@ -614,8 +614,8 @@ packages:
   ts-toolbelt@9.6.0:
     resolution: {integrity: sha512-nsZd8ZeNUzukXPlJmTBwUAuABDe/9qtVDelJeT/qW0ow3ZS3BsQJtNkan1802aM9Uf68/Y8ljw86Hu0h5IUW3w==}
 
-  type-fest@4.25.0:
-    resolution: {integrity: sha512-bRkIGlXsnGBRBQRAY56UXBm//9qH4bmJfFvq83gSz41N282df+fjy8ofcEgc1sM8geNt5cl6mC2g9Fht1cs8Aw==}
+  type-fest@4.26.0:
+    resolution: {integrity: sha512-OduNjVJsFbifKb57UqZ2EMP1i4u64Xwow3NYXUtBbD4vIwJdQd4+xl8YDou1dlm4DVrtwT/7Ky8z8WyCULVfxw==}
     engines: {node: '>=16'}
 
   typescript@5.5.4:
@@ -670,7 +670,7 @@ snapshots:
 
   '@aws-cdk/asset-node-proxy-agent-v6@2.0.3': {}
 
-  '@aws-cdk/cloud-assembly-schema@36.0.19': {}
+  '@aws-cdk/cloud-assembly-schema@36.0.20': {}
 
   '@biomejs/biome@1.8.3':
     optionalDependencies:
@@ -810,7 +810,7 @@ snapshots:
       string-length: 6.0.0
       strip-ansi: 7.1.0
       ts-toolbelt: 9.6.0
-      type-fest: 4.25.0
+      type-fest: 4.26.0
       zod: 3.23.8
 
   '@molt/types@0.2.0':
@@ -863,7 +863,7 @@ snapshots:
       '@aws-cdk/asset-awscli-v1': 2.2.202
       '@aws-cdk/asset-kubectl-v20': 2.1.2
       '@aws-cdk/asset-node-proxy-agent-v6': 2.0.3
-      '@aws-cdk/cloud-assembly-schema': 36.0.19
+      '@aws-cdk/cloud-assembly-schema': 36.0.20
       constructs: 10.3.0
 
   aws-cdk@2.154.1:
@@ -872,12 +872,12 @@ snapshots:
 
   aws-lambda@1.0.7:
     dependencies:
-      aws-sdk: 2.1684.0
+      aws-sdk: 2.1685.0
       commander: 3.0.2
       js-yaml: 3.14.1
       watchpack: 2.4.2
 
-  aws-sdk@2.1684.0:
+  aws-sdk@2.1685.0:
     dependencies:
       buffer: 4.9.2
       events: 1.1.1
@@ -1120,7 +1120,7 @@ snapshots:
 
   ts-toolbelt@9.6.0: {}
 
-  type-fest@4.25.0: {}
+  type-fest@4.26.0: {}
 
   typescript@5.5.4: {}
 

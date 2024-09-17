@@ -9,24 +9,16 @@ updates:
     rebase-strategy: auto
     assignees:
       - poad
-
-  - package-ecosystem: npm
-    directory: '/backend/'
-    schedule:
-      interval: daily
-      timezone: Asia/Tokyo
-    allow:
-      - dependency-type: all
-    rebase-strategy: auto
-    assignees:
-      - poad
     groups:
-      backend:
+      actions:
         patterns:
           - '*'
 
   - package-ecosystem: npm
-    directory: '/frontend/'
+    directories:
+      - '/backend/'
+      - '/frontend/'
+      - '/frontend/cdk/'
     schedule:
       interval: daily
       timezone: Asia/Tokyo
@@ -36,21 +28,6 @@ updates:
     assignees:
       - poad
     groups:
-      nextjs:
-        patterns:
-          - '＊'
-
-  - package-ecosystem: npm
-    directory: '/frontend/cdk/'
-    schedule:
-      interval: daily
-      timezone: Asia/Tokyo
-    allow:
-      - dependency-type: all
-    rebase-strategy: auto
-    assignees:
-      - poad
-    groups:
-      cdk:
+      npm:
         patterns:
           - '*'

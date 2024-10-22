@@ -24,10 +24,10 @@
     "all": "pnpm build"
   },
   "dependencies": {
-    "@types/node": "^22.7.7",
+    "@types/node": "^22.7.8",
     "@types/react": "^18.3.11",
     "@types/uuid": "^10.0.0",
-    "next": "^14.2.15",
+    "next": "^15.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "typescript": "^5.6.3",

@@ -7,7 +7,7 @@ import tseslint from 'typescript-eslint';
 // @ts-ignore
 import importPlugin from 'eslint-plugin-import';
 
-import pluginPromise from 'eslint-plugin-promise'
+import pluginPromise from 'eslint-plugin-promise';
 
 export default tseslint.config(
   eslint.configs.recommended,
@@ -51,8 +51,8 @@ export default tseslint.config(
       '@stylistic/ts/indent': ['error', 2],
       'comma-dangle': ['error', 'always-multiline'],
       'arrow-parens': ['error', 'always'],
-      'indent': ['error', 2],
-      'quotes': ['error', 'single'],
+      indent: ['error', 2],
+      quotes: ['error', 'single'],
     },
   },
 );

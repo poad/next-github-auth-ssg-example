@@ -17,14 +17,14 @@
     "prebuild": "pnpm lint"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^2.12.0",
-    "@stylistic/eslint-plugin-js": "^2.12.0",
-    "@stylistic/eslint-plugin-plus": "^2.12.0",
-    "@stylistic/eslint-plugin-ts": "^2.12.0",
+    "@stylistic/eslint-plugin": "^2.12.1",
+    "@stylistic/eslint-plugin-js": "^2.12.1",
+    "@stylistic/eslint-plugin-plus": "^2.12.1",
+    "@stylistic/eslint-plugin-ts": "^2.12.1",
     "@types/aws-lambda": "^8.10.146",
-    "@types/node": "^22.10.1",
+    "@types/node": "^22.10.2",
     "@types/qs": "^6.9.17",
-    "aws-cdk": "^2.172.0",
+    "aws-cdk": "^2.173.0",
     "esbuild": "^0.24.0",
     "eslint": "^9.16.0",
     "eslint-config-import": "^0.13.0",
@@ -37,7 +37,7 @@
     "typescript-eslint": "^8.18.0"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.172.0",
+    "aws-cdk-lib": "^2.173.0",
     "constructs": "^10.4.2",
     "graphql": "^16.9.0",
     "graphql-request": "^7.1.2",

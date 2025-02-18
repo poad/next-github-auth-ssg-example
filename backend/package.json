@@ -25,7 +25,7 @@
     "@types/aws-lambda": "^8.10.147",
     "@types/node": "^22.13.4",
     "@types/qs": "^6.9.18",
-    "aws-cdk": "^2.178.2",
+    "aws-cdk": "^2.179.0",
     "esbuild": "^0.25.0",
     "eslint": "^9.20.1",
     "eslint-config-import": "^0.13.0",
@@ -38,7 +38,7 @@
     "typescript-eslint": "^8.24.1"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.178.2",
+    "aws-cdk-lib": "^2.179.0",
     "constructs": "^10.4.2",
     "graphql": "^16.10.0",
     "graphql-request": "^7.1.2",

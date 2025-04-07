@@ -4,16 +4,21 @@ import eslint from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 import stylisticTs from '@stylistic/eslint-plugin-ts';
 import tseslint from 'typescript-eslint';
-// @ts-expect-error ignore type errors
+// @ts-expect-error ignore type error
 import importPlugin from 'eslint-plugin-import';
 
-import pluginPromise from 'eslint-plugin-promise'
+import pluginPromise from 'eslint-plugin-promise';
+
+import { includeIgnoreFile } from '@eslint/compat';
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const gitignorePath = path.resolve(__dirname, ".gitignore");
 
 export default tseslint.config(
-  eslint.configs.recommended,
-  ...tseslint.configs.strict,
-  ...tseslint.configs.stylistic,
-  pluginPromise.configs['flat/recommended'],
+  includeIgnoreFile(gitignorePath),
   {
     ignores: [
       '**/*.d.ts',
@@ -27,6 +32,10 @@ export default tseslint.config(
       'dist',
     ],
   },
+  eslint.configs.recommended,
+  ...tseslint.configs.strict,
+  ...tseslint.configs.stylistic,
+  pluginPromise.configs['flat/recommended'],
   {
     files: ['./{bin,lib,lambda}/**/*.ts'],
     ...importPlugin.flatConfigs.recommended,
@@ -47,12 +56,11 @@ export default tseslint.config(
       '@stylistic/ts': stylisticTs,
     },
     rules: {
-      '@stylistic/semi': 'error',
+      '@stylistic/semi': ['error', 'always'],
       '@stylistic/ts/indent': ['error', 2],
-      'comma-dangle': ['error', 'always-multiline'],
-      'arrow-parens': ['error', 'always'],
-      indent: ['error', 2],
-      quotes: ['error', 'single'],
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/arrow-parens': ['error', 'always'],
+      '@stylistic/quotes': ['error', 'single'],
     },
   },
 );

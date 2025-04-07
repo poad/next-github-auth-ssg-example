@@ -13,10 +13,16 @@ import { FlatCompat } from '@eslint/eslintrc';
 
 const compat = new FlatCompat();
 
+import { includeIgnoreFile } from '@eslint/compat';
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const gitignorePath = path.resolve(__dirname, ".gitignore");
+
 export default tseslint.config(
-  eslint.configs.recommended,
-  ...tseslint.configs.strict,
-  ...tseslint.configs.stylistic,
+  includeIgnoreFile(gitignorePath),
   {
     ignores: [
       '**/*.d.ts',
@@ -28,7 +34,13 @@ export default tseslint.config(
       './.next/*',
       'out',
       '.storybook',
+      'cdk/**/*',
     ],
+  },
+  eslint.configs.recommended,
+  ...tseslint.configs.strict,
+  ...tseslint.configs.stylistic,
+  {
     files: ['src/**/*.{jsx,tsx}'],
     plugins: {
       'jsx-a11y': jsxA11yPlugin,
@@ -61,13 +73,12 @@ export default tseslint.config(
       '@next/next/no-duplicate-head': 'off',
       '@next/next/no-img-element': 'error',
       '@next/next/no-page-custom-font': 'off',
-      '@stylistic/semi': 'error',
-      '@stylistic/ts/indent': ['error', 2],
       '@stylistic/jsx/jsx-indent': ['error', 2],
-      'comma-dangle': ['error', 'always-multiline'],
-      'arrow-parens': ['error', 'always'],
-      semi: ['error', 'always'],
-      quotes: ['error', 'single'],
+      '@stylistic/semi': ['error', 'always'],
+      '@stylistic/ts/indent': ['error', 2],
+      '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/arrow-parens': ['error', 'always'],
+      '@stylistic/quotes': ['error', 'single'],
     },
   },
 );
